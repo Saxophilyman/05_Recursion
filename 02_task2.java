@@ -10,7 +10,7 @@
     }
 
 
-//4. проверка, является ли строка палиндромом;
+    //4. проверка, является ли строка палиндромом;
     public static boolean isStringPalindrome(String checkingString) {
         String string;
         try {
