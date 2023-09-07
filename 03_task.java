@@ -12,3 +12,21 @@
 
 
 //6. печать элементов списка с чётными индексами;
+    public static void printEvenValuesFromList(List<Integer> arrayList) {
+        if (arrayList.isEmpty()) {
+            return;
+        }
+        System.out.println(arrayList.get(0));
+        printEvenValuesFromList(arrayList.subList(2, arrayList.size()));
+    }
+
+или    
+    public static void printEvenValuesFromList(List<Integer> arrayList) {
+        if (arrayList.isEmpty()) {
+            return;
+        }
+        System.out.println(arrayList.get(0));
+        arrayList.remove(0);
+        arrayList.remove(0);
+        printEvenValuesFromList(arrayList);
+    }
